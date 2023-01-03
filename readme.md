@@ -1,5 +1,5 @@
 # Challenge Encriptador Alura Latam
-Primer Challenge del programa ONE - Oracle Next Education
+Primer Challenge del programa ONE - Oracle Next Education<br>
 Se nos pidió desarrollar un encriptador de mensajes
 
 **Las "llaves" de encriptación usadas son las siguientes:**
