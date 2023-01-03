@@ -91,7 +91,7 @@ miBotonBorrar.addEventListener("click", function () {
 
 function quitarCarEsp() {
     var texto = document.getElementById("text_Out").value;
-    texto = texto.replace(/[^\w\s]/gi, "");
+    texto = texto.replace(/[^\w\sñ]/gi, "");
     document.getElementById("text_Out").value = texto;
 }
 document.getElementById("text_Out").addEventListener("keyup", quitarCarEsp);
