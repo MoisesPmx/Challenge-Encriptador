@@ -25,5 +25,5 @@ La página debe tener campos para inserción del texto que será encriptado o de
 El resultado debe ser mostrado en la pantalla.
 
 ------------
-[github](https://raw.githubusercontent.com/MoisesPmx/Challenge-Encriptador/blob/main/pictures/rect3650.png)
+[github]https://raw.githubusercontent.com/MoisesPmx/Challenge-Encriptador/blob/main/pictures/rect3650.png
 ### [Encriptador](https://moisespmx.github.io/Challenge-Encriptador/ "Encriptador")
