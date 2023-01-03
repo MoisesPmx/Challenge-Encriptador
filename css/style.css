@@ -1,0 +1,312 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-image: linear-gradient(
+        to right,
+        #d16ba5,
+        #c777b9,
+        #ba83ca,
+        #aa8fd8,
+        #9a9ae1,
+        #829ee0,
+        #6ba0db,
+        #58a2d3,
+        #3c9cc0,
+        #2a94aa,
+        #298c93,
+        #31827c
+    );
+}
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    margin: auto;
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+.header {
+    grid-column: 1 / -1;
+}
+.logo {
+    height: 45px;
+    padding: 20px 0 0 45px;
+}
+.main {
+    border: none;
+    border-radius: 20px;
+    background-color: #ffcc7a;
+    grid-column: 1 / 3;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    background-size: cover;
+}
+
+.cajaTexto::placeholder {
+    color: grey;
+}
+.cajaTexto {
+    width: 75%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    background: none;
+    padding: 10% 10% 0 10%;
+    resize: none;
+    outline: none;
+    text-transform: lowercase;
+    color: black;
+    border: none;
+}
+.inputTexto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cajaImagen {
+    background: #b9cc95;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+}
+.share {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 20% 10% 0 10%;
+}
+.botones {
+    display: flex;    
+    justify-content: space-evenly;
+    padding: 0 0 35px 0;
+}
+.copiarx {
+    padding: 10px 0 35px 0;
+}
+.imagen {
+    width: 70%;
+}
+.boton {
+    width: 200px;
+    font-family: "Karla", sans-serif;
+    font-weight: bold;
+    height: 40px;
+    font-size: 1em;
+    color: black;
+    background: #f0f0d8;
+    border: none;
+    border-radius: 20px;
+    transition: 1s all;
+    cursor: pointer;
+    box-shadow: 4px 4px 2px #635a49;
+}
+.boton:hover {
+    background: #f0f0d8;
+    color: black;
+    box-shadow: none;
+    font-weight: bold;
+    border: none;
+}
+.delete {
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1em;
+    color: #f0f0d8;
+    background-color: #e76f51;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.delete_b {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0 5%;
+}
+.copiar_b {
+    width: 200px;
+    font-family: "Karla", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    height: 40px;
+    color: black;
+    background: #f0f0d8;
+    border: none;
+    border-radius: 20px;
+    transition: 1s all;
+    cursor: pointer;
+    box-shadow: 4px 4px 2px #635a49;
+}
+.copiar_b:hover {
+    color: black;
+    box-shadow: none;
+    border: none;
+}
+.autor {
+    grid-column: 1 / 3;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-family: "Karla", sans-serif;
+    font-size: 1rem;
+    padding: 0 7% 0 7%;
+}
+.redes {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.icono {
+    height: 30px;
+    opacity: 70%;
+}
+.icono:hover {
+    opacity: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-image: linear-gradient(
+            to bottom,
+            #d16ba5,
+            #c777b9,
+            #ba83ca,
+            #aa8fd8,
+            #9a9ae1,
+            #829ee0,
+            #6ba0db,
+            #58a2d3,
+            #3c9cc0,
+            #2a94aa,
+            #298c93,
+            #31827c
+        );
+    }
+    .contenedor {
+        width: 95%;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 95%;
+        grid-template-rows: repeat(5, auto);
+        justify-content: center;
+    }
+    .main {
+        grid-column: 1 / 2;
+        display: flex;
+        gap: 20px;
+        height: 550px;
+    }
+    .botones {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 25px;
+    }
+    .boton {
+        background: #f0f0d8;
+        color: black;
+        box-shadow: none;
+    }
+    .copiar_b {
+        background: #f0f0d8;
+        color: black;
+        box-shadow: none;
+        border: none;
+    }
+    .cajaImagen {
+        grid-column: 1 / 2;
+    }
+    .autor {
+        grid-column: 1 / 2;
+    }
+    .redes {
+        grid-column: 1 / 2;
+    }
+    .icono {
+        padding: 0 0 35px 0;
+        opacity: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 840px) {
+    body {
+        background-image: linear-gradient(
+            to left,
+            #d16ba5,
+            #c777b9,
+            #ba83ca,
+            #aa8fd8,
+            #9a9ae1,
+            #829ee0,
+            #6ba0db,
+            #58a2d3,
+            #3c9cc0,
+            #2a94aa,
+            #298c93,
+            #31827c
+        );
+    }
+    .contenedor {
+        width: 95%;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        justify-content: center;
+    }
+    .main {
+        grid-column: 1 / 4;
+        height: 470px;
+    }
+    .cajaTexto {
+        height: 250px;
+        padding: 10% 10% 0 10%;
+    }
+    .cajaImagen {
+        grid-column: 1 / 4;
+    }
+    .autor {
+        grid-column: 1 / 3;
+        padding: 0 0 35px 0;
+    }
+    .redes {
+        grid-column: 3 / 4;
+    }
+    .icono {
+        padding: 0 0 35px 0;
+        opacity: 100%;
+    }
+    .boton {
+        background: #f0f0d8;
+        color: black;
+        box-shadow: none;
+    }
+    .copiar_b {
+        background: #f0f0d8;
+        color: black;
+        box-shadow: none;
+        border: none;
+    }
+    .cajaImagen {
+        height: 250px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .imagen {
+        width: 65%;
+        grid-row: 1 / -1;
+        padding: 0 0 23px;
+    }
+}

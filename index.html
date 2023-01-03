@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Challenge - Encriptador</title>
+        <link rel="icon" type="image/png" href="./pictures/moyox.png" />
+        <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&display=swap");
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <header class="header">
+                <a href="https://www.aluracursos.com/">
+                    <img
+                        class="logo"
+                        src="pictures/Logow.png"
+                        alt="Logo de Alura"
+                    />
+                </a>
+            </header>
+            <main class="main">
+                <div class="inputTexto">
+                    <textarea
+                        class="cajaTexto"
+                        rows="15"
+                        cols="100%"
+                        oninput="quitarAcentos(this)"
+                        placeholder="Escribe tu Texto aquí, sólo letras minúsculas y sin acentos"
+                        id="text_Out"
+                    ></textarea>
+                </div>
+                <div class="delete_b">
+                    <button class="delete" id="delText" style="display: none">
+                        X
+                    </button>
+                </div>
+                <div class="botones">
+                    <button
+                        class="boton"
+                        id="encriptar_b"
+                        onclick="encriptar()"
+                    >
+                        ENCRIPTAR
+                    </button>
+                    <button
+                        class="boton"
+                        id="desencriptar_b"
+                        onclick="desencriptar()"
+                    >
+                        DESENCRIPTAR
+                    </button>
+                </div>
+            </main>
+            <div class="cajaImagen">
+                <p class="share">¡Envía un Mensaje Secreto a tus Amigos!</p>
+                <img
+                    class="imagen"
+                    src="pictures/imgCat.png"
+                    alt="Dibujo de un gato que sostiene una carta"
+                />
+
+                <div class="copiarx">
+                    <button class="copiar_b" id="copiar_b" onclick="copiar()">
+                        COPIAR
+                    </button>
+                </div>
+            </div>
+
+            <div class="autor">
+                &copy 2022 Challenge Encriptador - Diseño e ilustraciones por
+                Moisés Pérez
+            </div>
+
+            <div class="redes">
+                <a href="https://github.com">
+                    <img class="icono" src="pictures/github.png" />
+                </a>
+                <a href="https://www.instagram.com">
+                    <img class="icono" src="pictures/insta.png" />
+                </a>
+                <a href="https://mx.linkedin.com">
+                    <img class="icono" src="pictures/link.png" />
+                </a>
+            </div>
+        </div>
+        <script type="text/javascript" src="jscript/script.js"></script>
+    </body>
+</html>
