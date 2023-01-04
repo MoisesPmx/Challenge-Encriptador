@@ -18,7 +18,7 @@ La letra "u" es convertida para "ufat"
 Por ejemplo:
 "gato" => "gaitober" / "gaitober" => "gato"
 
-La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre las dos opciones.<br>
+La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre las dos opciones.
 El resultado debe ser mostrado en la pantalla.
 
 ![dispositivos](https://github.com/MoisesPmx/Challenge-Encriptador/blob/main/pictures/g881.png)
