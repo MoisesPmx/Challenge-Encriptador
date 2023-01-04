@@ -2,7 +2,7 @@
 Primer Challenge del programa ONE - Oracle Next Education<br>
 Se nos pidió desarrollar un encriptador de mensajes
 
-**Las "llaves" de encriptación usadas son las siguientes:**
+:key: **Las "llaves" de encriptación usadas son las siguientes:**
 
 La letra "e" es convertida para "enter"<br>
 La letra "i" es convertida para "imes"<br>
