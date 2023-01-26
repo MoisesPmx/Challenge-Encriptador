@@ -47,7 +47,7 @@ function copiar(texto) {
     let copiartexto = document.getElementById("text_Out");
     copiartexto.select("text_Out");
     navigator.clipboard.writeText(copiartexto.value);
-    //document.execCommand("copy");
+    copiartexto.value = "";
 }
 
 function quitarAcentos(input) {
